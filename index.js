@@ -5,13 +5,14 @@ function createNestedArr(jumlahRow, jumlahCol){
    arrNew.push([]);
    for(var j = 0; j<jumlahCol; j++){
      var random = Math.random()*(abjad.length-1)
-     var randomAbjad = abjad[Math.floor(random)]
+     var randomAbjad = abjad[Math.round(random)]
      if(arrNew[i].length !== jumlahCol){
        arrNew[i].push(randomAbjad)
      }
    }
  }
- console.log(arrNew)
+ // console.log(arrNew)
+ return arrNew
 }
 
 console.log(createNestedArr(5, 3))
