@@ -9,7 +9,7 @@ function createNestedArray(jumlahRow, jumlahCol){
         arr.push(temp)
         temp = []
     }
-    console.log(arr);
+    return arr
     
 }
 
