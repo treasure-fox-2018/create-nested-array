@@ -20,3 +20,4 @@ function createNestedArr(jumlahRow, jumlahCol) {
 }
 
 console.log(createNestedArr(5, 3))
+console.log(createNestedArr(5, 3))
