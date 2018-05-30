@@ -5,10 +5,10 @@ function nestedArray(jumlahRow, jumlahCol) {
     let fillerArr = []
     arr.push(fillerArr)
     for (let b = 0; b < jumlahCol; b++) {
-      arr[a].push(alphabet[Math.floor((Math.random() * 26) + 1)])
+      arr[a].push(alphabet[Math.floor((Math.random() * alphabet.length) + 1)])
     }
   }
-  console.log(arr)
+  return arr
 }
 
 console.log(nestedArray(4, 4))
